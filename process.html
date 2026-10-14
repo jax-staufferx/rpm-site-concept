@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" data-v="l">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How we make your parts | RPM Precision</title>
+<meta name="description" content="How RPM Precision makes a medical device prototype: drawing review, Swiss turning and CNC milling, cleaning, blasting and passivation, 100% inspection on lots under 10, and a Certificate of Conformance with every shipment.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/fill.css"><link rel="stylesheet" href="css/sharp.css"><link rel="stylesheet" href="css/layer.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+</head>
+<body class="page-process">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="acc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7FC0F5"/><stop offset="1" stop-color="#F37D28"/></linearGradient></defs></svg>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="head">
+  <a href="index.html" class="brand" aria-label="RPM Precision home"><img src="assets/logo.png" alt="RPM Precision" width="160" height="46"></a>
+  <nav aria-label="Main">
+    <a href="index.html#make">What we make</a><a href="process.html" aria-current="page" class="on">Process</a><a href="index.html#capabilities">Capabilities</a><a href="index.html#quality">Quality</a><a href="index.html#team">Team</a><a href="index.html#faq">FAQ</a>
+  </nav>
+  <a class="tel mono" href="tel:+17654708619">(765) 470-8619</a>
+  <a class="btn sm" href="index.html#contact">Contact us</a>
+</header>
+
+<main id="main">
+<section class="journey" id="how" data-sheet="01 · Process" aria-labelledby="how-h">
+  <div class="sec-head">
+    <p class="crumbs mono"><a href="index.html">Home</a> / Process</p>
+    <h1 id="how-h">How a part moves through our shop</h1>
+    <p class="sub">Every job goes through the same five steps. Scroll through at your own pace, or use the step buttons to jump straight to one.</p>
+  </div>
+  <div class="j-grid">
+    <div class="j-visual">
+      <nav class="stagebar" aria-label="Process steps">
+        <button data-s="0" aria-current="step"><i>01</i>Review</button><button data-s="1"><i>02</i>Machine</button><button data-s="2"><i>03</i>Finish</button><button data-s="3"><i>04</i>Inspect</button><button data-s="4"><i>05</i>Ship</button>
+      </nav>
+      <div class="layer"><div class="stage-view" data-stage="0">
+        <svg class="poster" viewBox="0 0 600 300" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M110 120h40l6 10v40l-6 10h-40zM156 135h24v30h-24M180 138h250l40 12-40 12H180"/><path d="M190 138l6 24M206 138l6 24M222 138l6 24M238 138l6 24M254 138l6 24M270 138l6 24M286 138l6 24M302 138l6 24M318 138l6 24M334 138l6 24M350 138l6 24M366 138l6 24M382 138l6 24M398 138l6 24"/></g></svg>
+        <canvas aria-hidden="true"></canvas>
+        <svg class="dims" aria-hidden="true"></svg>
+        <div class="readout mono" aria-hidden="true"><span class="ro-k">Step 01</span><span class="ro-v">Drawing review</span></div>
+        <button class="replay mono" type="button" aria-label="Play this step again">↻ Replay</button>
+
+        <!-- 0 review: contract review checklist -->
+        <div class="ov doc card-r" data-for="0" data-doc="0" aria-hidden="true">
+          <p class="doc-h">Contract review</p>
+          <ul class="chk">
+            <li data-p="1">Drawing and revision</li><li data-p="2">Material spec</li><li data-p="3">Special processes</li><li data-p="3">Inspection and paperwork</li><li data-p="4">What the parts are for</li>
+          </ul>
+          <p class="flagnote" data-p="4"><b>⚑ Flagged at quote:</b> surface roughness can't be measured in-house. We sort it out with you before any cutting starts.</p>
+        </div>
+        <!-- 1 machine -->
+        <div class="ov ctl" data-for="1">
+          <div class="seg" role="group" aria-label="Material shown"><button aria-pressed="true" data-mat="ti">Titanium</button><button aria-pressed="false" data-mat="ss">17-4 stainless</button></div>
+        </div>
+        <!-- 2 finish: the sequence, clickable -->
+        <div class="ov ctl" data-for="2">
+          <div class="seg phases" role="group" aria-label="Finishing steps">
+            <button data-phase="0">1 · Clean</button><button data-phase="1">2 · Blast</button><button data-phase="2">3 · Clean</button><button data-phase="3">4 · Passivate</button><button data-phase="4">Anodize <small>(partner)</small></button>
+          </div>
+        </div>
+        <!-- 3 inspect: report fills as each dimension is measured -->
+        <div class="ov doc fai" data-for="3" data-doc="3" aria-hidden="true">
+          <p class="doc-h">Inspection report <span>example values</span></p>
+          <table><thead><tr><th>#</th><th>Characteristic</th><th>Method</th><th>Measured</th></tr></thead>
+          <tbody>
+            <tr data-p="1"><td>1</td><td>Overall length</td><td>Caliper</td><td><s>—</s><em>1.7482</em></td></tr>
+            <tr data-p="2"><td>2</td><td>Head Ø</td><td>Micrometer</td><td><s>—</s><em>0.2995</em></td></tr>
+            <tr data-p="3"><td>3</td><td>Head height</td><td>Micrometer</td><td><s>—</s><em>0.1189</em></td></tr>
+            <tr data-p="4"><td>4</td><td>Neck Ø</td><td>Micrometer</td><td><s>—</s><em>0.1262</em></td></tr>
+            <tr data-p="5"><td>5</td><td>Thread major Ø</td><td>Micrometer</td><td><s>—</s><em>0.1718</em></td></tr>
+          </tbody></table>
+        </div>
+        <!-- 4 ship: label prints, then the CoC -->
+        <div class="ov doc label-card" data-for="4" data-doc="4" aria-hidden="true">
+          <div data-p="1" class="slide">
+            <p class="doc-h">Package label</p>
+            <dl><dt>Part no.</dt><dd>Your part no.</dd><dt>Rev</dt><dd>B</dd><dt>Lot</dt><dd>RPM lot</dd><dt>Material</dt><dd>Ti-6Al-4V ELI</dd><dt>Qty</dt><dd>5</dd></dl>
+            <p class="ncu">NON-STERILE · NOT FOR CLINICAL USE</p>
+          </div>
+        </div>
+        <div class="ov doc coc" data-for="4" data-doc="4" aria-hidden="true">
+          <div data-p="2" class="slide">
+            <p class="doc-h">Certificate of Conformance</p>
+            <ul class="chk on-all"><li>Material spec + heat / lot</li><li>Special processes + who did them</li><li>Certs attached or referenced</li><li>Statement of conformance</li><li>Exceptions: none</li></ul>
+            <p class="sign">Released by Quality</p>
+          </div>
+        </div>
+      </div></div>
+    </div>
+
+    <ol class="steps">
+      <li class="step" data-s="0" id="review">
+        <span class="no mono">01 · Review</span>
+        <h2>We review your drawing before we quote it</h2>
+        <p>Every request gets a manufacturability and contract review first. We check the drawing and model, the material spec, any special processes, what inspection and paperwork you need, and what the parts are for.</p>
+        <p class="hl">If something on your print is a problem, such as a callout we can't measure, we raise it when we quote, not after the parts are made.</p>
+        <ul class="ticks"><li>The quote lists every process and outside operation</li><li>Parts are for bench testing, preclinical studies or design verification</li></ul>
+      </li>
+      <li class="step" data-s="1" id="machine">
+        <span class="no mono">02 · Machine</span>
+        <h2>Swiss turning and CNC milling</h2>
+        <p>On a Swiss-type lathe, the bar slides out past a tool that cuts right where the bar is supported. That keeps long, slender parts like screws, pins and tubes rigid while they're turned, and deep holes can be drilled on the same machine. The finished part is cut off the bar complete.</p>
+        <p>Plates and other prismatic parts go to our CNC mill. The first part off every setup is checked before the rest are made.</p>
+        <ul class="ticks"><li>Kyle Walker runs Swiss turning</li><li>Alex Aspinwall runs CNC milling</li></ul>
+      </li>
+      <li class="step" data-s="2" id="finish">
+        <span class="no mono">03 · Finish</span>
+        <h2>Cleaning, blasting and passivation</h2>
+        <p>Finishing happens in the same building as the machines, in this order: an ultrasonic clean, bead or oxide blasting one part at a time, a second clean, then citric passivation for stainless parts. Blast media for stainless is kept separate.</p>
+        <p>Anodizing, laser marking, laser welding, wire EDM and nitric passivation go to partners. We set the order on our purchase order, inspect the parts when they come back and reference the partner's certification, so you still deal with one shop.</p>
+      </li>
+      <li class="step" data-s="3" id="inspect">
+        <span class="no mono">04 · Inspect</span>
+        <h2>Every part is inspected on orders under ten</h2>
+        <p>For prototypes, test parts and lots under ten, we check every characteristic on the drawing, on every piece. A new part number gets a first article with every dimension measured and recorded, and Quality accepts it before the rest are made.</p>
+        <p class="hl">We write down the actual measurement for each dimension, not just a pass or fail.</p>
+      </li>
+      <li class="step" data-s="4" id="ship">
+        <span class="no mono">05 · Assemble &amp; ship</span>
+        <h2>Packing, paperwork and shipping</h2>
+        <p>Multi-part instruments are assembled in-house. Every shipment is labelled and goes out with a Certificate of Conformance listing the material and lot, every special process and who performed it, attached certifications, and any exceptions.</p>
+        <p>If you need inspection data, material certs or a first article report in your own format, tell us when you ask for a quote and it ships with the parts. We keep the records behind every certificate for at least five years.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec next" aria-labelledby="next-h">
+  <div class="next-grid">
+    <div>
+      <h2 id="next-h">Have a part in mind?</h2>
+      <p class="sub">Call the shop or send a note. A drawing helps, but it isn't required to start a conversation.</p>
+    </div>
+    <div class="next-actions">
+      <a class="btn" href="index.html#contact">Talk to us about your part</a>
+      <a class="btn ghost" href="tel:+17654708619">(765) 470-8619</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="f-brand"><img src="assets/logo.png" alt="RPM Precision" width="140" height="40"><p>RPM Precision Manufacturing<span>a d.b.a. of Riser Precision Manufacturing LLC</span></p></div>
+  <nav class="f-nav" aria-label="Footer"><a href="index.html#make">What we make</a><a href="process.html">Process</a><a href="index.html#capabilities">Capabilities</a><a href="index.html#quality">Quality</a><a href="index.html#team">Team</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Contact</a></nav>
+  <address class="f-addr">15 Howard Ave, Building D, Unit 1<br>Arcadia, IN 46030<br><a href="tel:+17654708619">(765) 470-8619</a><br><a href="mailto:sales@rpm-precision.com">sales@rpm-precision.com</a></address>
+  <p class="f-meta mono">© 2026 RPM Precision</p>
+</footer>
+
+<div class="mbar"><a class="btn" href="index.html#contact">Send a message</a><a class="btn ghost" href="tel:+17654708619" aria-label="Call RPM">Call</a></div>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>

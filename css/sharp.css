@@ -1,0 +1,56 @@
+/* V4-S "sharp": the kiki version of V4-A. Corners are already squared in this folder's style.css (generated);
+   this layer adds machined chamfers to the boxes that matter, a crisper type setting in Archivo, and squares off
+   the last round things (buttons, play button, swatches, live dot). Real parts and drawing balloons stay round. */
+:root{--cut:.75rem;--cut-s:.5rem}
+
+/* type: Archivo, headings a touch wide and tight, like stamped lettering */
+body{font-family:"Archivo",system-ui,sans-serif;font-stretch:100%;letter-spacing:-.005em}
+h1,h2,h3{font-family:"Archivo",system-ui,sans-serif;font-stretch:112%;font-weight:700;letter-spacing:-.03em;line-height:1.02}
+h3{font-stretch:106%;letter-spacing:-.015em}
+.proof b,.q-grid .num,.ph::before{font-family:"Archivo",system-ui,sans-serif;font-stretch:118%;letter-spacing:-.04em}
+.lead,.sub{letter-spacing:0}
+
+/* chamfers: the top-right and bottom-left corners are cut, opposite A's drawing corner marks */
+.fam,.cap,.qcol,.call,.rfq,.ask,.stage-view,.ph,.materials li,.doc>.slide,.fai,.card-r,.lt-row .tl{
+  clip-path:polygon(0 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,var(--cut) 100%,0 calc(100% - var(--cut)))}
+.materials li,.ico,.lt-row .tl{--cut:var(--cut-s)}
+.fai,.card-r,.doc>.slide{--cut:.625rem}
+/* the cut corners get a hairline so the edge reads as machined rather than missing */
+.fam,.cap,.qcol,.call,.rfq,.ask,.ph{position:relative}
+.fam::before,.cap::before,.qcol::before,.call::before,.rfq::before,.ask::before,.ph::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;
+  background:
+    linear-gradient(45deg,transparent calc(50% - .5px),rgba(160,195,230,.4) calc(50% - .5px),rgba(160,195,230,.4) calc(50% + .5px),transparent calc(50% + .5px)) right top/var(--cut) var(--cut) no-repeat,
+    linear-gradient(45deg,transparent calc(50% - .5px),rgba(160,195,230,.4) calc(50% - .5px),rgba(160,195,230,.4) calc(50% + .5px),transparent calc(50% + .5px)) left bottom/var(--cut) var(--cut) no-repeat}
+.ph::after{content:""}
+.stage-view{box-shadow:none!important}
+
+/* buttons: rectangular, chamfered, set in caps */
+.btn{border-radius:0;clip-path:polygon(0 0,calc(100% - .625rem) 0,100% .625rem,100% 100%,.625rem 100%,0 calc(100% - .625rem));
+  text-transform:uppercase;letter-spacing:.06em;font-size:.84rem;font-weight:700;font-stretch:108%}
+.btn.sm{font-size:.76rem}
+.btn.ghost{box-shadow:none;background:
+  linear-gradient(45deg,transparent calc(50% - .75px),rgba(234,242,250,.5) calc(50% - .75px),rgba(234,242,250,.5) calc(50% + .75px),transparent calc(50% + .75px)) right top/.625rem .625rem no-repeat,
+  linear-gradient(45deg,transparent calc(50% - .75px),rgba(234,242,250,.5) calc(50% - .75px),rgba(234,242,250,.5) calc(50% + .75px),transparent calc(50% + .75px)) left bottom/.625rem .625rem no-repeat;
+  border:1.5px solid rgba(234,242,250,.45)}
+.btn.ghost:hover{background-color:rgba(234,242,250,.08)}
+/* segmented controls, chips and tags: square */
+.seg{border-radius:0;padding:3px;gap:3px}.seg button{border-radius:0;text-transform:uppercase;letter-spacing:.05em;font-size:.74rem;font-weight:700}
+.use label{border-radius:0}
+.readout,.replay{border-radius:0}
+.live{border-radius:0;width:.5rem;height:.5rem}
+/* icon tiles, play button and swatches */
+.ico{border-radius:0;clip-path:polygon(0 0,calc(100% - .45rem) 0,100% .45rem,100% 100%,.45rem 100%,0 calc(100% - .45rem))}
+.tv-play{border-radius:0;clip-path:polygon(0 0,calc(100% - .7rem) 0,100% .7rem,100% 100%,.7rem 100%,0 calc(100% - .7rem))}
+.tv-play::before{display:none}
+.tv-play{animation:tvpulse 2s ease-in-out infinite}
+@keyframes tvpulse{50%{background:#ff9a52}}
+.sw{border-radius:0;transform:rotate(45deg) scale(.82)}
+.dot{border-radius:0;transform:rotate(45deg)}
+/* tighter, squarer list markers */
+.qcol li::before{content:"■";font-size:.55rem;top:.45em}
+.ticks li::before{content:"▸ "}
+.chk li::before{border-radius:0}
+/* form fields: square with a sharp focus edge */
+.rfq input:not([type=radio]):not([type=file]),.rfq textarea{border-radius:0}
+.drop{border-radius:0}
+@media (prefers-reduced-motion:reduce){.tv-play{animation:none}}
